@@ -7,7 +7,7 @@ module Stupidedi
         r = SegmentReqs
         e = ElementReqs
         s = SegmentDefs
-        POACK855 = b.build("PO", "855", "PurchaseOrderAcknowledgement",
+        POACK855 = b.build("POACK", "855", "PurchaseOrderAcknowledgement",
         	d::TableDef.header("Heading",
         		b::Segment(10, s:: ST, "Transaction Set Header", r::Required, d::RepeatCount.bounded(1),
         			b::Element(e::Required, "Transaction Set Identifier Code", b::Values("855")),

@@ -7,7 +7,7 @@ module Stupidedi
         r = SegmentReqs
         s = SegmentDefs
 
-        POACK855 = b.build("IN", "855", "PurchaseOrderAcknowledgement",
+        POACK855 = b.build("POACK", "855", "PurchaseOrderAcknowledgement",
           d::TableDef.header("1 - Header",
             s::ST.use( 10, r::Mandatory, d::RepeatCount.bounded(1)),
             s::BAK.use( 20, r::Mandatory, d::RepeatCount.bounded(1)),
